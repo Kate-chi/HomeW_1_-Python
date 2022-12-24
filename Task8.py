@@ -14,7 +14,7 @@ if slice > columns * rows:
     print('no')
     exit()
 
-if slice // columns or slice // rows:
+if slice % columns == 0 or slice % rows == 0:
     print('yes')
 else:
     print('no')
